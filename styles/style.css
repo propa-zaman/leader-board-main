@@ -27,6 +27,40 @@ hr {
     margin-bottom: 30px;
 
 }
+/* nav styles */
+.navbar{
+    width: 1440px;
+height: 94px;
+background: #562EFF;
+margin: 0;
+
+}
+.nav-1{
+    display: flex;
+    align-items: center;
+}
+.nav-1 img{
+    width: 40.42px;
+height: 51px;
+margin-left: 285px;
+}
+.nav-1 h3{
+    font-style: normal;
+font-weight: 500;
+font-size: 24px;
+color: #FFFFFF;
+margin-left: 16px;
+
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+}
 
 
 
@@ -171,3 +205,14 @@ hr {
     
 }
 /* Medium Tablet Devices */
+@media screen and (min-width:689px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
