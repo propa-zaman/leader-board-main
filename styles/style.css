@@ -27,39 +27,55 @@ hr {
     margin-bottom: 30px;
 
 }
+
 /* nav styles */
-.navbar{
+.navbar {
     width: 1440px;
-height: 94px;
-background: #562EFF;
-margin: 0;
+    height: 94px;
+    background: #562EFF;
+    margin: 0;
+    display: flex;
 
 }
-.nav-1{
+
+.nav-1 {
     display: flex;
     align-items: center;
 }
-.nav-1 img{
+
+.nav-1 img {
     width: 40.42px;
-height: 51px;
-margin-left: 285px;
+    height: 51px;
+    margin-left: 285px;
 }
-.nav-1 h3{
+
+.nav-1 h3 {
     font-style: normal;
-font-weight: 500;
-font-size: 24px;
-color: #FFFFFF;
-margin-left: 16px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 36px;
+   
 
 }
-nav ul li a{
-    text-decoration: none;
-}
-nav ul li{
+
+nav ul li {
     list-style: none;
+    margin-left: 36px;
 }
-nav ul{
+
+nav ul {
     display: flex;
+    align-items: center;
+    margin-left: 450px;
 }
 
 
@@ -164,9 +180,11 @@ nav ul{
     font-size: 14.6913px;
     color: #ED6B4F;
 }
-.ratings span{
+
+.ratings span {
     color: #9F9F9F;
 }
+
 .filled {
     color: #FFC014;
 }
@@ -174,10 +192,12 @@ nav ul{
 .not-filled {
     color: #AEAEAE;
 }
-.duration{
+
+.duration {
     margin-left: 25px;
 
 }
+
 .course-info {
     display: flex;
     align-items: center;
@@ -189,30 +209,40 @@ nav ul{
 
 /* mobile devices */
 @media screen and (max-width: 688px) {
-    .container{
+    .container {
         width: 100%;
     }
-    .players, .blogs, .courses{
-        grid-template-columns: repeat(1,1fr);
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
-    .player, .blog{
+
+    .player,
+    .blog {
         flex-direction: column;
     }
-    .blog{
-        grid-template-columns: repeat(1,1fr);
+
+    .blog {
+        grid-template-columns: repeat(1, 1fr);
     }
-    
+
 }
+
 /* Medium Tablet Devices */
-@media screen and (min-width:689px) and (max-width:992px){
-    .container{
+@media screen and (min-width:689px) and (max-width:992px) {
+    .container {
         width: 100%;
     }
-    .players, .courses{
-        grid-template-columns: repeat(2,1fr);
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .blogs{
-        grid-template-columns: repeat(1,1fr);
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
