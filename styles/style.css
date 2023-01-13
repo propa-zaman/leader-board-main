@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 /* common styles */
 body {
     font-family: 'Poppins', sans-serif;
@@ -63,7 +67,6 @@ nav ul li a {
     font-weight: 400;
     font-size: 16px;
     color: #FFFFFF;
-    margin-left: 36px;
    
 
 }
@@ -216,7 +219,19 @@ nav ul {
     .container {
         width: 100%;
     }
+    nav ul {
+        margin-left: 0px;
+    }
+    .nav-1 img {
+        
+        margin-left: 10px;
+    }
 
+nav ul li {
+    margin-left: 10px;
+   
+
+}
     .players,
     .blogs,
     .courses {
@@ -237,8 +252,18 @@ nav ul {
 
 /* Medium Tablet Devices */
 @media screen and (min-width:689px) and (max-width:992px) {
+    .navbar{
+        width: 100%;
+    }
     .container {
         width: 100%;
+    }
+    nav ul {
+        margin-left: 40px;
+    }
+    .nav-1 img {
+        
+        margin-left: 80px;
     }
 
     .players,
